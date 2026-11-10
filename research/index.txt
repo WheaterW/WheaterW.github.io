@@ -1,0 +1,104 @@
+1:"$Sreact.fragment"
+3:I[3719,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-a68a4ec8c9a90234.js"],"ThemeProvider"]
+4:I[310,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-a68a4ec8c9a90234.js"],"LocaleProvider"]
+5:I[4574,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-a68a4ec8c9a90234.js"],"default"]
+6:I[7555,[],""]
+7:I[1295,[],""]
+8:I[2548,["461","static/chunks/461-a9a5d7b05a71d978.js","874","static/chunks/874-6cc630662f3664af.js","291","static/chunks/291-e39730cc9327e39b.js","177","static/chunks/app/layout-a68a4ec8c9a90234.js"],"default"]
+a:I[9665,[],"MetadataBoundary"]
+c:I[9665,[],"OutletBoundary"]
+f:I[4911,[],"AsyncMetadataOutlet"]
+11:I[9665,[],"ViewportBoundary"]
+13:I[6614,[],""]
+:HL["/_next/static/css/4e24a5f51312d075.css","style"]
+2:T5d3,
+    try {
+      const cfg = {"enabled":true,"locales":["en","zh"],"defaultLocale":"en","mode":"fixed","fixedLocale":"en","persist":true,"switcher":true,"labels":{"en":"EN","zh":"中文"}};
+      const storageKey = 'locale-storage';
+      const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
+      const matchLocale = (candidate) => {
+        const normalized = normalize(candidate);
+        if (!normalized) return null;
+        if (cfg.locales.includes(normalized)) return normalized;
+        const language = normalized.split('-')[0];
+        if (cfg.locales.includes(language)) return language;
+        return null;
+      };
+
+      let resolved = null;
+
+      if (!cfg.enabled) {
+        resolved = cfg.defaultLocale;
+      } else if (cfg.persist) {
+        resolved = matchLocale(localStorage.getItem(storageKey));
+      }
+
+      if (!resolved) {
+        if (cfg.mode === 'fixed') {
+          resolved = cfg.fixedLocale;
+        } else {
+          resolved = matchLocale(navigator.language);
+        }
+      }
+
+      if (!resolved) {
+        resolved = cfg.defaultLocale;
+      }
+
+      const root = document.documentElement;
+      root.lang = resolved;
+      root.setAttribute('data-locale', resolved);
+
+      if (cfg.persist) {
+        localStorage.setItem(storageKey, resolved);
+      }
+    } catch (e) {
+      const root = document.documentElement;
+      root.lang = 'en';
+      root.setAttribute('data-locale', 'en');
+    }
+  0:{"P":null,"b":"YHVlzPdluAHwEa8mfpK1P","p":"","c":["","research",""],"i":false,"f":[[["",{"children":[["slug","research","d"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4e24a5f51312d075.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'system';\n                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));\n                var root = document.documentElement;\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"font-sans antialiased","children":["$","$L3",null,{"children":["$","$L4",null,{"config":{"enabled":true,"locales":["en","zh"],"defaultLocale":"en","mode":"fixed","fixedLocale":"en","persist":true,"switcher":true,"labels":{"en":"EN","zh":"中文"}},"children":[["$","$L5",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Research","type":"page","target":"research","href":"/research"},{"title":"Internships & Teaching","type":"page","target":"experience","href":"/experience"},{"title":"Honors","type":"page","target":"awards","href":"/awards"}],"siteTitle":"Yunze Wei","enableOnePageMode":true,"i18n":"$0:f:0:1:1:props:children:1:props:children:1:props:children:props:children:props:config","itemsByLocale":{"en":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Research","type":"page","target":"research","href":"/research"},{"title":"Internships & Teaching","type":"page","target":"experience","href":"/experience"},{"title":"Honors","type":"page","target":"awards","href":"/awards"}],"zh":[{"title":"关于我","type":"page","target":"about","href":"/"},{"title":"论文发表","type":"page","target":"publications","href":"/publications"},{"title":"科研工作","type":"page","target":"research","href":"/research"},{"title":"实习与教学","type":"page","target":"experience","href":"/experience"},{"title":"荣誉奖励","type":"page","target":"awards","href":"/awards"}]},"siteTitleByLocale":{"en":"Yunze Wei","zh":"Yunze Wei"}}],["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L8",null,{"lastUpdated":"October 2026","lastUpdatedByLocale":{"en":"October 2026","zh":"2026 年 10 月"},"defaultLocale":"en"}]]}]}]}]]}]]}],{"children":[["slug","research","d"],["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L9",["$","$La",null,{"children":"$Lb"}],null,["$","$Lc",null,{"children":["$Ld","$Le",["$","$Lf",null,{"promise":"$@10"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","oXiZ_aATi3r6cIka_wDnB",{"children":[["$","$L11",null,{"children":"$L12"}],null]}],null]}],false]],"m":"$undefined","G":["$13","$undefined"],"s":false,"S":true}
+14:"$Sreact.suspense"
+15:I[4911,[],"AsyncMetadata"]
+17:I[2382,["461","static/chunks/461-a9a5d7b05a71d978.js","178","static/chunks/178-595a94b9af1e67b5.js","748","static/chunks/748-1b493219cdc8b791.js","182","static/chunks/app/%5Bslug%5D/page-101ec7b3114f6777.js"],"default"]
+b:["$","$14",null,{"fallback":null,"children":["$","$L15",null,{"promise":"$@16"}]}]
+18:T769,### D-Pingmesh: Dynamic probing & fault localization
+
+2026
+
+Developed control-plane-aware active probing and fault-localization methods for datacenter networks undergoing topology and traffic-engineering changes. Evaluated the methods through simulation and testbed experiments. (ATC 2026 · Accepted)
+
+### INTA: Intent-based configuration translation
+
+2024–2026
+
+Designed an agentic framework that decomposes configurations into intents, retrieves target-device configuration procedures, and incrementally verifies generated configurations. Achieved 98.15% syntax and view correctness and an 84.72% command-level match rate on an industrial cross-vendor dataset. (IEEE ICNP 2025)
+
+### Protocol testing: From specifications to executable tests
+
+2025–2026
+
+Developed an end-to-end workflow for interpreting protocol specifications, generating test cases, and executing tests on network devices. Structured representations and constrained generation improve completeness and compatibility with practical test environments. (ACM/IRTF ANRW 2025)
+
+### Distributed training: Communication optimization across layers
+
+2023–2024
+
+Systematized optimization across parallelization strategies, collective communication libraries, and networks. Proposed a five-layer cross-layer co-design framework and directions for coordinating heterogeneous resources. (IEEE Network 2025)
+
+### xNet: Learning to model network performance
+
+2022–2023
+
+Contributed as second author, with responsibility for modeling and experimental evaluation in wide-area-network scenarios. xNet achieved over 100× speedup over packet-level simulators. (IEEE/ACM ToN 2024)
+
+## Standards & patents
+
+- IETF Internet-Draft: A Framework for AI-Assisted Network Protocol Testing from Specifications.
+- Two patent applications under substantive examination, on network configuration translation and LLM-based automated protocol testing.
+9:["$","$L17",null,{"dataByLocale":{"en":{"type":"text","config":{"type":"text","title":"Research","source":"research.md"},"content":"$18"},"zh":{"type":"text","config":{"type":"text","title":"科研工作","source":"research.md"},"content":"### D-Pingmesh: 动态探测与故障定位\n\n2026\n\n面向拓扑与流量工程动态调整的数据中心网络，研发控制平面感知的主动探测与故障定位方法，并通过仿真与测试床实验开展评估。（ATC 2026 · 已接收）\n\n### INTA: 基于意图的网络配置翻译\n\n2024–2026\n\n设计智能体框架，将配置分解为意图，检索目标设备的配置流程，并对生成配置进行增量验证。在工业级跨厂商数据集上实现 98.15% 的语法与视图正确率，以及 84.72% 的命令级匹配率。（IEEE ICNP 2025）\n\n### 网络协议测试: 从协议规范到可执行网络测试\n\n2025–2026\n\n研发端到端工作流，实现协议规范解读、测试用例生成及网络设备测试执行。通过结构化表示与受约束生成，提升测试完整性以及与实际测试环境的兼容性。（ACM/IRTF ANRW 2025）\n\n### 分布式训练: 分布式训练通信优化\n\n2023–2024\n\n系统梳理并行策略、集合通信库和网络层面的通信优化方法，提出五层跨层协同设计框架及异构资源协同优化方向。（IEEE Network 2025）\n\n### xNet: 基于图神经网络的网络性能建模\n\n2022–2023\n\n作为第二作者参与研究，负责广域网场景的建模与实验评估。xNet 相比数据包级仿真器实现超过 100 倍的加速。（IEEE/ACM ToN 2024）\n\n## 标准与专利\n\n- IETF 互联网草案：《基于规范的 AI 辅助网络协议测试框架》。\n- 两项专利申请处于实质审查阶段，分别涉及网络设备配置转换和基于大语言模型的自动化网络协议测试。\n"}},"defaultLocale":"en"}]
+e:null
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+d:null
+16:{"metadata":[["$","title","0",{"children":"Research | Yunze Wei"}],["$","meta","1",{"name":"author","content":"Yunze Wei"}],["$","meta","2",{"name":"keywords","content":"Yunze Wei,PhD,Research,Tsinghua University"}],["$","meta","3",{"name":"creator","content":"Yunze Wei"}],["$","meta","4",{"name":"publisher","content":"Yunze Wei"}],["$","meta","5",{"property":"og:title","content":"Yunze Wei"}],["$","meta","6",{"property":"og:description","content":"Yunze Wei, Ph.D. candidate at Tsinghua University. AI for Networking & Networking for AI: network configuration, protocol testing, reliability, and communication optimization."}],["$","meta","7",{"property":"og:site_name","content":"Yunze Wei's Academic Website"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:type","content":"website"}],["$","meta","10",{"name":"twitter:card","content":"summary"}],["$","meta","11",{"name":"twitter:title","content":"Yunze Wei"}],["$","meta","12",{"name":"twitter:description","content":"Yunze Wei, Ph.D. candidate at Tsinghua University. AI for Networking & Networking for AI: network configuration, protocol testing, reliability, and communication optimization."}],["$","link","13",{"rel":"icon","href":"/favicon.svg"}]],"error":null,"digest":"$undefined"}
+10:{"metadata":"$16:metadata","error":null,"digest":"$undefined"}
